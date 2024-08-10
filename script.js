@@ -33,7 +33,7 @@ async function searchImages(){
 
         imageWrapper.appendChild(image);
         imageWrapper.appendChild(imageLink);
-        imageWrapper.appendChild(imageWrapper);
+        searchResults.appendChild(imageWrapper);
     })
 
     page++;
@@ -41,3 +41,14 @@ async function searchImages(){
         showMore.style.display = "block";
     }
 }
+
+formElem.addEventListener("submit", (event)=>{
+    event.preventDefault()
+    page= 1;
+    searchImages();
+})
+
+showMore.addEventListener("click", ()=>{
+    event.preventDefault()
+    searchImages();
+})
