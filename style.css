@@ -87,7 +87,7 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(0,0,0,0.2);
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 .attributions{
     display: flex;
